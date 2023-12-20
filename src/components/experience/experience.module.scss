@@ -1,0 +1,73 @@
+@import "../../utils/variables.module.scss";
+
+.experience{
+    position: relative;
+    font-family: "portfolio_bold";
+    color: white;
+    text-align: center;
+
+    h6{
+        color: white;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+
+    .paper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: teal;
+        background: #232946;
+        height: 100%;
+        width: 100%;
+    }
+
+    &_list{
+        li{
+            padding: 0 0 0.5rem 0;
+        }
+    }
+
+    &_card{
+        display: block;
+        max-width: 450px;
+        background-color: #1d1836;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border-bottom: 3px solid white;
+
+        h4{
+            font-size: 1.4rem;
+        }
+
+        &__description{
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    }
+
+    &_icon{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        background: $tertiaryColor;
+        border-radius: 50%;
+        justify-content: center;
+        vertical-align: middle;
+        border: 2px solid;
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+.timeline_item{
+    &:nth-child(2n){
+        div:last-child{
+            display: flex;
+            justify-content: right;
+        }
+    }
+}

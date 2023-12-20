@@ -1,0 +1,30 @@
+@import "../../utils/variables.module.scss";
+
+.contact{
+    position: relative;
+    font-family: "portfolio_bold";
+    color: white;
+    
+
+    &_body{
+        background-color: $secondaryColor;
+    }
+
+    h2{
+        color: white;
+        font-size: 4rem;
+    }
+
+    .bg_tertiary{
+        background-color: $tertiaryColor;
+        &:-internal-autofill-selected{
+            background-color: inherit;
+        }
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    input{
+        font-size: 1.2rem;
+    }
+}

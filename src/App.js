@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import './App.scss';
+import Snowflakes from './components/snowflakes/snowflakes';
+// import Introduction from './components/introduction/introduction';
+// import SpiderMan from './components/spiderman/spiderman';
+import Contact from './components/contact/contact';
+import Overview from './components/overview/overview';
+import Experience from './components/experience/experience';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        
       </header>
+      <main>
+        {/* <Introduction/> */}
+        <Snowflakes />
+        {/* <SpiderMan></SpiderMan> */}
+        <Overview />
+        <Experience />
+        <Contact/>
+        
+      </main>
     </div>
   );
 }
