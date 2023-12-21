@@ -40,7 +40,7 @@ const Technologies = () => {
             name:"NodeJS"
         },{
             icon:faSass,
-            name:"Scss"
+            name:"SASS"
         },{
             icon:faPython,
             name:"Python"
