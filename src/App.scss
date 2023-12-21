@@ -1,4 +1,7 @@
 @import "./src/utils/variables.module.scss";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @font-face {
   font-family: portfolio_regular;
@@ -82,6 +85,8 @@ input:-webkit-autofill:active {
 
 .main_color {
   color: $primaryColor;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .MuiTimelineContent-root {
@@ -122,6 +127,10 @@ input:-webkit-autofill:active {
   50% {
     transform: translateY(1.8rem);
   }
+}
+
+.error {
+  color: $error;
 }
 
 /* overrides */

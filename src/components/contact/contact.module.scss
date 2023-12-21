@@ -29,6 +29,17 @@
             background-color: inherit;
         }
     }
+
+    &_alert{
+        background-color: black !important;
+        color: $primaryColor !important;
+        position: fixed;
+        top: 5rem;
+        z-index: 5;
+        .MuiAlert-icon{
+            color: $primaryColor;
+        }
+    }
 }
 
 .profile_card{

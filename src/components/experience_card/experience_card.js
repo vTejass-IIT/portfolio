@@ -22,7 +22,7 @@ const ExperienceCard = ({ experience, index }) => {
             <section>
                 <h5>{experience.location}</h5>
                 <div className={`xl:mt-5 flex xl:flex-row flex-col-reverse gap-5 ` + styles.experience_card__description}>
-                    <ul className={`flex-[1] rounded-2xl text-justify list-disc ` + styles.experience_card_list}>
+                    <ul className={`flex-[1] rounded-2xl text-left lg:text-justify list-disc ` + styles.experience_card_list}>
                         {experience.summary.map((item, index) => {
                             return (
                                 <li key={index}>{item}</li>
