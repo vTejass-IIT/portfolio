@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages
+      - main
   workflow_dispatch:
 permissions:
   contents: read
@@ -59,11 +59,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: built-site
-          path: ./built-site
+          path: ./build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./built-site
+          publish_dir: ./build
           publish_branch: gh-pages
