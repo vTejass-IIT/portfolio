@@ -9,15 +9,18 @@
     &_body{
         background-color: $secondaryColor;
 
-        &__right{
-            justify-content: center;
-            position: relative;
-        }
+    }
+
+    &_body_right{
+        justify-content: center;
+        position: relative;
+        background-color: transparent;
+        position: relative;
     }
 
     h2{
         color: white;
-        font-size: 4rem;
+        // font-size: 4rem;
     }
 
     .bg_tertiary{
@@ -25,12 +28,6 @@
         &:-internal-autofill-selected{
             background-color: inherit;
         }
-    }
-    label{
-        font-size: 1.2rem;
-    }
-    input{
-        font-size: 1.2rem;
     }
 }
 
@@ -45,6 +42,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+
+    @include screen_lg{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        text-align: left;
+    }
     img{
         width: 180px;
         height: 180px;
@@ -58,6 +63,7 @@
     ul{
         display: flex;
         margin: 10px 0;
+        justify-content: center;
         li{
             margin: 0 5px;
             width: 2.3rem;
@@ -85,6 +91,5 @@
         display: flex;
         width: 100%;
         justify-content: space-evenly;
-        margin-bottom: 15px;
     }
 }

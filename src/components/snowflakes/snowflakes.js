@@ -2,8 +2,6 @@ import React from 'react';
 import { useCallback } from "react";
 import Particles from 'react-particles';
 import { loadSlim } from "tsparticles-slim";
-import Introduction from '../introduction/introduction';
-import SpiderMan from '../spiderman/spiderman';
 
 const Snowflakes = () => {
     const particlesInit = useCallback(async engine => {
@@ -19,8 +17,7 @@ const Snowflakes = () => {
     const particleColors = ['#915eff', '#2f2465', '#000000'];
 
   return (
-    <div style={{ top: 0, left: 0, width: '100%', height: '100vh', zIndex: -1 }}>
-        <SpiderMan />
+    <div style={{ top: 0, left: 0, zIndex: -1 }}>
         <Particles
             id="tsparticles"
             init={particlesInit}
@@ -97,8 +94,6 @@ const Snowflakes = () => {
                 detectRetina: true,
             }}
         />
-        <Introduction />
-        <div className={`absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center`}><a href="#overview"><div className={`w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2`}><div className="action-slider w-3 h-3 rounded-full bg-secondary mb-1 bg-white"></div></div></a></div>
     </div>
   );
 };

@@ -7,6 +7,8 @@ import Contact from './components/contact/contact';
 import Overview from './components/overview/overview';
 import Experience from './components/experience/experience';
 import Projects from './components/projects/projects';
+import Footer from './components/footer/footer';
+import Introduction from './components/introduction/introduction';
 
 function App() {
   return (
@@ -15,14 +17,13 @@ function App() {
         
       </header>
       <main>
-        {/* <Introduction/> */}
+        <Introduction />
         <Snowflakes />
-        {/* <SpiderMan></SpiderMan> */}
         <Overview />
         <Experience />
         <Projects/>
         <Contact/>
-        
+        <Footer />
       </main>
     </div>
   );

@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from "./experience.module.scss"
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import GraduationIcon from "@material-ui/icons/School";
+import WorkIcon from '@mui/icons-material/WorkOutline';
 
 import {
     TimelineConnector,
@@ -9,15 +11,18 @@ import {
     TimelineItem,
     TimelineOppositeContent,
     TimelineSeparator,
-    Timeline
+    Timeline,
+    timelineContentClasses
 } from "@mui/lab";
 import ExperienceCard from '../experience_card/experience_card';
 
 
 const Experience = () => {
+    const matches = useMediaQuery('(min-width:600px)');
     const experienceData = [
         {
             timeline:"2022 - 2024",
+            type:"School",
             heading:"Masters of Science in Computer Science",
             location:"Illinois Institute of Technology, Chicago",
             summary:[
@@ -30,6 +35,7 @@ const Experience = () => {
             ]
         },{
             timeline:"2021 - 2022",
+            type:"Work",
             heading:"Senior Software Engineer",
             location:"Freshworks, Bangalore, India",
             summary:[
@@ -40,6 +46,7 @@ const Experience = () => {
             ]
         },{
             timeline:"2018 - 2021",
+            type:"Work",
             heading:"Experience Developer Frontend",
             location:"ICF Next, Bangalore, India",
             summary:[
@@ -51,6 +58,7 @@ const Experience = () => {
             ]
         },{
             timeline:"2016 - 2018",
+            type:"Work",
             heading:"Programmer Analyst",
             location:"Cognizant Technology Solutions, Bangalore, India",
             summary:[
@@ -64,25 +72,34 @@ const Experience = () => {
         }
     ]
     return (
-        <section className={`p-20 rounded-2xl `+styles.experience}>
+        <section className={`p-5 md:p-16 lg:p-20 rounded-2xl `+styles.experience}>
             <p className={`main_color`}>
                 What I have done so far
             </p>
             <h2 className={`main_color`}>
                 Experience.
             </h2>
-            <Timeline position="alternate">
+            <Timeline position={matches ? 'alternate' : 'left'}>
                 {experienceData.map((item,index)=>{
                     return(
-                        <TimelineItem className={styles.timeline_item}>
-                            <TimelineOppositeContent color="text.secondary">
+                        <TimelineItem key={index} className={styles.timeline_item}
+                            sx={matches?{
+                                    [`& .${timelineContentClasses.root}:before`]: {
+                                      flex: 0.2,
+                                    },
+                            }:{}}
+                        >
+                            {matches ? <TimelineOppositeContent
+                            color="text.secondary">
                                 <h6>
                                     {item.timeline}
                                 </h6>
-                            </TimelineOppositeContent>
+                            </TimelineOppositeContent>:
+                            <></>}
+                            
                             <TimelineSeparator>
                                 <span className={styles.experience_icon}>
-                                    <GraduationIcon />
+                                    {item.type === "School" ? <GraduationIcon /> : <WorkIcon />}
                                 </span>
                                 <TimelineConnector />
                             </TimelineSeparator>

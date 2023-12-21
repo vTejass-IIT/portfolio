@@ -1,3 +1,27 @@
 $primaryColor: #915eff;
 $secondaryColor: #2f2465;
-$tertiaryColor:#1d1836
+$tertiaryColor: #1d1836;
+
+@mixin screen_sm {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin screen_md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin screen_lg {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin screen_xl {
+    @media (max-width: 1280px) {
+        @content;
+    }
+}

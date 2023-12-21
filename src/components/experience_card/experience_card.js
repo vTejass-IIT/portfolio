@@ -10,7 +10,7 @@ const ExperienceCard = ({ experience, index }) => {
             whileInView={{ opacity: 1 }}
             transition={{
                 duration: 0.8,
-                delay: 1 / 10,
+                delay: index + 1 !== 1 ? (index + 1) / 10 : 0,
                 type: "spring",
                 stiffness: 80,
                 damping: 15
@@ -22,7 +22,7 @@ const ExperienceCard = ({ experience, index }) => {
             <section>
                 <h5>{experience.location}</h5>
                 <div className={`xl:mt-5 flex xl:flex-row flex-col-reverse gap-5 ` + styles.experience_card__description}>
-                    <ul className={`flex-[1] rounded-2xl ` + styles.experience_list}>
+                    <ul className={`flex-[1] rounded-2xl ` + styles.experience_card_list}>
                         {experience.summary.map((item, index) => {
                             return (
                                 <li key={index}>{item}</li>
