@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.abdd9528.css",
-    "main.js": "/portfolio/static/js/main.77711648.js",
+    "main.css": "/portfolio/static/css/main.89f16163.css",
+    "main.js": "/portfolio/static/js/main.28a3ff1b.js",
     "static/js/787.e72b7679.chunk.js": "/portfolio/static/js/787.e72b7679.chunk.js",
     "static/media/My_profile.png": "/portfolio/static/media/My_profile.dd588a1d62486c5b51ea.png",
     "static/media/TejassV_Resume.pdf": "/portfolio/static/media/TejassV_Resume.3ac6acee498a1c841cf5.pdf",
     "static/media/SpaceGrotesk-Regular.ttf": "/portfolio/static/media/SpaceGrotesk-Regular.3683ead52440efaeba4d.ttf",
     "static/media/SpaceGrotesk-Bold.ttf": "/portfolio/static/media/SpaceGrotesk-Bold.9ee2fc15497f7869312f.ttf",
     "index.html": "/portfolio/index.html",
-    "main.abdd9528.css.map": "/portfolio/static/css/main.abdd9528.css.map",
-    "main.77711648.js.map": "/portfolio/static/js/main.77711648.js.map",
+    "main.89f16163.css.map": "/portfolio/static/css/main.89f16163.css.map",
+    "main.28a3ff1b.js.map": "/portfolio/static/js/main.28a3ff1b.js.map",
     "787.e72b7679.chunk.js.map": "/portfolio/static/js/787.e72b7679.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abdd9528.css",
-    "static/js/main.77711648.js"
+    "static/css/main.89f16163.css",
+    "static/js/main.28a3ff1b.js"
   ]
 }
