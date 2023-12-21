@@ -6,6 +6,7 @@ import Snowflakes from './components/snowflakes/snowflakes';
 import Contact from './components/contact/contact';
 import Overview from './components/overview/overview';
 import Experience from './components/experience/experience';
+import Projects from './components/projects/projects';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         {/* <SpiderMan></SpiderMan> */}
         <Overview />
         <Experience />
+        <Projects/>
         <Contact/>
         
       </main>

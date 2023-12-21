@@ -16,6 +16,7 @@ $secondaryColor: #58379e;
   font-family: portfolio_regular, portfolio_bold, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -79,5 +80,39 @@ input:-webkit-autofill:active{
 .MuiTimelineContent-root{
   &:nth-child(2n){
     justify-content: right;
+  }
+}
+
+.tags{
+  margin: 10px 10px 10px 0;
+  padding: 8px 16px;
+  outline: none;
+  display: inline-block;
+  border-radius: 5px;
+  
+  &__repo{
+      background-color: white;
+      color: $primaryColor;
+  }
+
+  &__site{
+      background-color: $primaryColor;
+      color: white;
+  }   
+}
+
+.icon_link{
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.action-slider{
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(1.8rem);
   }
 }

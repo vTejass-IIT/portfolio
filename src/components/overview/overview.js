@@ -3,7 +3,7 @@ import styles from "./overview.module.scss"
 
 const Overview = () => {
     return (
-        <section className={styles.overview}>
+        <section id="overview" className={styles.overview}>
             <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 justify-left overflow-hidden `}>
                 <div className={`flex-[0.6] p-20 rounded-2xl`}>
                     <p className={`main_color`}>

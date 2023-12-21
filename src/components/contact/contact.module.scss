@@ -8,6 +8,11 @@
 
     &_body{
         background-color: $secondaryColor;
+
+        &__right{
+            justify-content: center;
+            position: relative;
+        }
     }
 
     h2{
@@ -26,5 +31,60 @@
     }
     input{
         font-size: 1.2rem;
+    }
+}
+
+.profile_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+    h4{
+        display: block;
+    }
+
+    ul{
+        display: flex;
+        margin: 10px 0;
+        li{
+            margin: 0 5px;
+            width: 2.3rem;
+            height: 2rem;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            background-color: $primaryColor;
+            position: relative;
+            transition: transform 400ms ease-in-out 0s;
+
+            &:hover{
+                transform: rotate(360deg);
+            }
+
+            a{
+                color: rgb(255, 255, 255);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &__connect{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
     }
 }

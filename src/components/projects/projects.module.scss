@@ -1,0 +1,33 @@
+@import "../../utils/variables.module.scss";
+
+.projects{
+    position: relative;
+    font-family: "portfolio_bold";
+    color: white;
+
+    h2{
+        font-size: 4rem;
+    }
+    &_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 4rem;
+    }
+}
+
+.tags{
+    margin: 10px 0;
+    padding: 8px 16px;
+    outline: none;
+    
+    &__repo{
+        background-color: white;
+        color: $primaryColor;
+    }
+
+    &__site{
+        background-color: $tertiaryColor;
+        color: white;
+    }   
+}
