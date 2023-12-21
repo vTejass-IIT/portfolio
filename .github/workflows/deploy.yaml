@@ -40,9 +40,7 @@ jobs:
           node-version: "18"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Install dependencies
-        run: |
-          # ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-          npm ci --force # --force 18+ react dependencies
+        run: npm ci --force # --force 18+ react dependencies
       - name: Build project
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
       - name: Upload artifact
@@ -51,21 +49,12 @@ jobs:
           path: ./build
   # Deployment job
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: built-site
-          path: ./build
-
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: gh-pages
+        id: deployment
+        uses: actions/deploy-pages@v3
