@@ -41,7 +41,7 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Install dependencies
         run: |
-          ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+          # ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
           npm ci --force # --force 18+ react dependencies
       - name: Build project
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
