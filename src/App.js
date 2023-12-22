@@ -1,8 +1,6 @@
-// import logo from './logo.svg';
 import './App.scss';
+
 import Snowflakes from './components/snowflakes/snowflakes';
-// import Introduction from './components/introduction/introduction';
-// import SpiderMan from './components/spiderman/spiderman';
 import Contact from './components/contact/contact';
 import Overview from './components/overview/overview';
 import Experience from './components/experience/experience';
@@ -13,9 +11,7 @@ import Introduction from './components/introduction/introduction';
 function App() {
   return (
     <div>
-      <header>
-        
-      </header>
+      <header></header>
       <main>
         <Introduction />
         <Snowflakes />
