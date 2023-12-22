@@ -11,7 +11,7 @@ import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 
 import MyPhoto from "../../assets/My_profile.png"
-import MyResume from "../../assets/TejassV_Resume.pdf"
+import Resume from "../../assets/My_Resume.pdf"
 const Contact = () => {
     const [open, setOpen] = useState(false);
 
@@ -168,7 +168,7 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className={`text-center w-[100%]`}>
-                            <a className={`icon_link inline-block`} href={MyResume} rel="noreferrer" target="_blank"> Download my resume from here <FileDownloadIcon /></a>
+                            <a className={`icon_link inline-block`} href={Resume} rel="noreferrer" target="_blank"> Download my resume from here <FileDownloadIcon /></a>
                             <span className='block'>Liked what you see?</span>
                             <a className={`icon_link inline-block`} href="https://github.com/vTejass-IIT/portfolio" rel="noreferrer" target="_blank">  Check out the code here: <InsertLinkIcon /></a>
                         </div>
