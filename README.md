@@ -1,4 +1,4 @@
-# Next Portfolio
+# My Portfolio
 
 This is my "developer's" porfolio, built with React and TailwindCSS. It is hosted on Gitpages and self-hosted on port 3000.
 
