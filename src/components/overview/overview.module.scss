@@ -7,5 +7,9 @@
 
     h2{
         font-size: 4rem;
+
+        @include screen_sm{
+            font-size: 3rem;
+        }
     }
 }

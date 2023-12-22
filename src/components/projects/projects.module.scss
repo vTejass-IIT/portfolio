@@ -1,32 +1,37 @@
 @import "../../utils/variables.module.scss";
 
-.projects{
+.projects {
     position: relative;
     font-family: "portfolio_bold";
     color: white;
 
-    h2{
+    h2 {
         font-size: 4rem;
+
+        @include screen_sm {
+            font-size: 3rem;
+        }
     }
-    &_container{
+
+    &_container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 }
 
-.tags{
+.tags {
     margin: 10px 0;
     padding: 8px 16px;
     outline: none;
-    
-    &__repo{
+
+    &__repo {
         background-color: white;
         color: $primaryColor;
     }
 
-    &__site{
+    &__site {
         background-color: $tertiaryColor;
         color: white;
-    }   
+    }
 }

@@ -73,10 +73,10 @@ const Experience = () => {
     ]
     return (
         <section className={`p-5 md:p-16 lg:p-20 rounded-2xl `+styles.experience}>
-            <p className={`main_color`}>
+            <p className={` px-5 md:px-0 main_color`}>
                 What I have done so far
             </p>
-            <h2 className={`main_color`}>
+            <h2 className={` px-5 md:px-0  main_color`}>
                 Experience.
             </h2>
             <Timeline position={matches ? 'alternate' : 'left'}>

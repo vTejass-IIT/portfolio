@@ -105,7 +105,7 @@ const Contact = () => {
                         Email sent successfully!
                     </Alert>
                 </Snackbar>
-                <div className={`flex-[0.4] bg-black-100 p-8 rounded-2xl ` + styles.contact_body} style={{ transform: 'translateX(0%) translateY(0px) translateZ(0px)' }}>
+                <div className={`flex-[0.4] bg-black-100 px-4 md:px-8 py-6 md:py-8 rounded-2xl ` + styles.contact_body} style={{ transform: 'translateX(0%) translateY(0px) translateZ(0px)' }}>
                     <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Get in touch</p>
                     <h2 className="text-white font-black lg:text-[4rem] text-[2.5rem]">Contact Me.</h2>
                     <form ref={form} onSubmit={sendEmail} className="mt-4 lg:mt-12 flex flex-col">
