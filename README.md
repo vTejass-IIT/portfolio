@@ -8,23 +8,10 @@ This is my "developer's" porfolio, built with React and TailwindCSS. It is hoste
 ## Link
 
 The portfolio (main branch) is available at [https://github.com/vTejass-IIT/portfolio]
+
+## Deployment 
 I have setup git husky and git actions to automatically deploy when i push changes to main.
-## Deployment
 
-To deploy my portfolio (or your own) run:
-
-```bash
-  npm run start
-```
-
-Otherwise, when you're working on it, use
-```bash
-  npm run dev
-```
-, or:
-```bash
-  npx next dev
-```
 ## Feedback
 
 If you have any feedback, please reach out to me via the issues/PR page. Otherwise, you can reach me at: 
