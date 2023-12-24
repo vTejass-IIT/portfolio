@@ -11,7 +11,7 @@ import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 
 import MyPhoto from "../../assets/My_profile.png"
-import Resume from "../../assets/My_Resume.pdf"
+import Resume from "../../assets/Resume_Tejass.pdf"
 const Contact = () => {
     const [open, setOpen] = useState(false);
 
