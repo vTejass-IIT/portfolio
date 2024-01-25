@@ -93,6 +93,7 @@ const Contact = () => {
                 damping: 15
             }}
             className={styles.contact}
+            id="contact"
         >
             <div className={`xl:mt-12 flex lg:flex-row  flex-col-reverse gap-10 overflow-hidden justify-around p-10 lg:p-16`}>
                 <Snackbar

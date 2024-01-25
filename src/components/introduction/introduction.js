@@ -11,7 +11,7 @@ const Introduction = () => {
     const displaySubText = useTypewriter(subText, 100, 2000)
     const scrollToRef = useScrollToView('overview')
     return (
-        <section className={` relative h-[100vh]`}>
+        <section id="introduction" className={` relative h-[100vh]`}>
             <SpiderMan />
             <section className={styles.intoduction}>
                 <h1 className={` lg:text-[4rem] text-[2rem]`}>

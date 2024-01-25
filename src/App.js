@@ -7,6 +7,7 @@ import Experience from './components/experience/experience';
 import Projects from './components/projects/projects';
 import Footer from './components/footer/footer';
 import Introduction from './components/introduction/introduction';
+import StickyElement from './components/sticky_header/sticky_header';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <header></header>
       <main>
         <Introduction />
+        <StickyElement />
         <Snowflakes />
         <Overview />
         <Experience />

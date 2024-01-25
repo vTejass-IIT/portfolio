@@ -11,7 +11,7 @@ import {
     faSass,
     faPython,
     faAngular,
-    faAws
+    faAws,
  } from '@fortawesome/free-brands-svg-icons'
 
 

@@ -8,15 +8,9 @@ const Projects = () => {
 
     const ProjectsData = [
         {
-            heading: "Credit Card Fraud Detection Model",
-            description: "Using dataset from Kaggle, performed various data preparation techniques and Feature Engineering techniques.",
-            technologies: ["Python", "Machine Learning"],
-            repo: "https://github.com/vTejass-IIT/cs584-creditCardFraudDetection",
-        },
-        {
             heading: "Return Done",
             description: "Developed and maintained the Return Done website, employing React for frontend and C# for backend development. Implemented Azure for continuous integration and deployment, showcasing expertise in deployment strategies and infrastructure management.",
-            technologies: ["ReactJS", "C#", "Azure"],
+            technologies: ["ReactJS", "ASP.NET", "C#", "Azure"],
             repo: "https://github.com/vTejass-IIT/returnDone",
             link: "https://www.returndone.com/",
         },
@@ -25,6 +19,12 @@ const Projects = () => {
             description: "Served as Lead Frontend Developer with responsibilities encompassing management and development of the AsianPaints website using AEM as the CMS platform.",
             technologies: ["VueJS", "Javascript", "AEM", "SEO"],
             link: "https://www.asianpaints.com/",
+        },
+        {
+            heading: "Credit Card Fraud Detection Model",
+            description: "Using dataset from Kaggle, performed various data preparation techniques and Feature Engineering techniques.",
+            technologies: ["Python", "Machine Learning"],
+            repo: "https://github.com/vTejass-IIT/cs584-creditCardFraudDetection",
         },
         {
             heading: "OpenAI Summary Model Dashboard",
@@ -41,7 +41,7 @@ const Projects = () => {
     ]
 
     return (
-        <section className={styles.projects}>
+        <section id="projects" className={styles.projects}>
             <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 justify-left overflow-hidden `}>
                 <div className={`flex-[0.6] p-10 md:p-16 lg:p-20 rounded-2xl`}>
                     <p className={`main_color`}>

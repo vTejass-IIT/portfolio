@@ -40,6 +40,7 @@ const Experience = () => {
             location:"Freshworks, Bangalore, India",
             summary:[
                 "Led frontend development efforts as the Lead Frontend Developer, focusing on designing effective design patterns for web components.",
+                "Creating dashboards using .NET, Angular, & SQL to support multiclient access to view / maintain FreshDesk Products",
                 "Leveraged ReactJS, Redux and NodeJs, resulting in an up to 30% reduction in page load times and a 15% increase in user engagement for the FreshBots team.",
                 "Demonstrated expertise in utilizing testing and debugging tools including Jest, Cypress, and React Testing Library.",
                 "Thrived in an Agile development environment, collaborating seamlessly with designers, product managers, and stakeholders to ensure the delivery of high-quality products.",
@@ -52,6 +53,7 @@ const Experience = () => {
             summary:[
                 "Served as Lead Frontend Developer with responsibilities encompassing management and development of the AsianPaints website using AEM as the CMS platform.",
                 "Spearheaded the development of the Tally Loyalty Product, employing Angular, NodeJS, and SQL technologies.",
+                "Experience of building responsive web apps using .NET, MVC, HTML5, XML, CSS3, JavaScript, AJAX.",
                 "Mentored junior developers, providing guidance and support in their professional growth.",
                 "Utilized Handlebars and Fractals to craft and exhibit reusable components, presenting them effectively to stakeholders.",
                 "Designed and built a variety of reusable components utilizing HTML, SCSS, Angular, Vue, and Javascript. These components found application across diverse projects, bolstering the AEM development framework."
@@ -72,7 +74,7 @@ const Experience = () => {
         }
     ]
     return (
-        <section className={`p-5 md:p-16 lg:p-20 rounded-2xl `+styles.experience}>
+        <section id="experience" className={`p-5 md:p-16 lg:p-20 rounded-2xl `+styles.experience}>
             <p className={` px-5 md:px-0 main_color`}>
                 What I have done so far
             </p>
