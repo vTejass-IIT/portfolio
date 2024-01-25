@@ -3,7 +3,6 @@ import styles from "./sticky_header.module.scss";
 
 import useScrollToView from '../../utils/hooks/useScrollToView';
 
-import IconButton from '@mui/material/IconButton';
 import HomeIcon from '@mui/icons-material/Home';
 import ViewTimelineIcon from '@mui/icons-material/ViewTimeline';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
